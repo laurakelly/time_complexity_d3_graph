@@ -109,8 +109,6 @@
         data["O(2^n)"] = twoexpn();
         data["O(n!)"] = factorial();
 
-        data = discard_high_values(data);
-
         var keys = Object.keys(data)
 
         var legend = svg.selectAll(".legend")
@@ -167,23 +165,6 @@
                 .attr("d", line);
         }
      }
-
-    function discard_high_values (data){
-        var keys = Object.keys(data);
-        for (var i=0; i < keys.length; i++) {
-            for (var j=0; j < data[keys[i]].length; j++) {
-                var current = data[keys[i]][j];
-
-                if (current > 1000){
-                    data[keys[i]][j] = 1015;
-                    data[keys[i]] = data[keys[i]].slice(0,j+1);
-                }
-            }
-        }
-
-        console.log(data)
-        return data;
-    }
 
     graph ();
 
