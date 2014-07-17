@@ -1,0 +1,84 @@
+body {
+  font: 10px sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#graph {
+    width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+#legend {
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    padding: 0;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    width: 30px;
+    display: inline-block;
+    border: solid, 2px;
+}
+
+.O1 {
+    stroke: #AEFF00;
+    fill: #AEFF00;
+}
+
+.On {
+    stroke: #E8AE3A; 
+    fill: #E8AE3A;
+}
+
+.Ologn {
+    stroke: #8C7C6E; 
+    fill: #8C7C6E;
+}
+
+.Onlogn {
+    stroke: #8BD3FF; 
+    fill: #8BD3FF;
+
+}
+
+.On2 {
+    stroke: #3D60E8; 
+    fill: #3D60E8;
+}
+
+.factorial {
+    stroke: #8352FF; 
+    fill: #8352FF;
+}
+
+.O2n {
+    stroke: #FF6764; 
+    fill: #FF6764;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke-width: 2px;
+}
