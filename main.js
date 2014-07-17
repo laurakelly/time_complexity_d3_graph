@@ -2,7 +2,7 @@
 
     function constant () {
         var nums = [];
-        for (var i=0; i < 100; i++){
+        for (var i=0; i < 101; i++){
             nums.push(1);
         }
         return nums;
@@ -10,7 +10,7 @@
 
     function linear () {
         var nums = [];
-        for (var i=0; i < 100; i++) {
+        for (var i=0; i < 101; i++) {
             nums.push(i);
         }
         return nums;
@@ -18,7 +18,7 @@
 
     function logn () {
         var nums = [];
-        for (var i=0; i < 100; i++) {
+        for (var i=0; i < 101; i++) {
             if (i === 0){
                 nums.push(0);
             } else {
@@ -30,7 +30,7 @@
 
     function nlogn() {
         var nums = [];
-        for (var i=0; i < 100; i++) {
+        for (var i=0; i < 101; i++) {
             if (i === 0){
                 nums.push(0);
             } else {
@@ -43,7 +43,7 @@
 
     function nexp2 () {
         var nums = [];
-        for (var i=0; i < 100; i++) {
+        for (var i=0; i < 101; i++) {
             nums.push(Math.pow(i, 2));
         }
         return nums;
@@ -75,7 +75,7 @@
 
         var x = d3.scale.linear()
             .range([0, width])
-            .domain([0, 100]);
+            .domain([0, 101]);
 
         var y = d3.scale.linear()
             .range([height, 0])
